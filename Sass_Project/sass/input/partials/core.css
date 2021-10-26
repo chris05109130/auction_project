@@ -1,0 +1,17 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: tahoma; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px black; }
+  a:hover {
+    background-color: red; }
+
+/*# sourceMappingURL=core.css.map */

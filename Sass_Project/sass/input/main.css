@@ -1,0 +1,202 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: tahoma; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px black; }
+  a:hover {
+    background-color: red; }
+
+#topHeader {
+  background-color: lightSlateGrey;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  #topHeader .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; }
+  #topHeader h1 {
+    text-shadow: 1px 1px black;
+    font-size: 2.2em;
+    letter-spacing: 1.3px; }
+  #topHeader .right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; }
+  #topHeader ul li {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background-color: #3e4853;
+    border-right: 3px solid #fff; }
+
+#searchBar {
+  width: 100%;
+  height: 50px;
+  background-color: black; }
+  #searchBar input[type="text"] {
+    height: 30px;
+    margin-top: 10px;
+    width: 89%;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none; }
+  #searchBar .btn {
+    width: 10%;
+    background-color: navy;
+    height: 30px;
+    color: #fff;
+    outline: none; }
+
+.container {
+  background-color: floralWhite; }
+
+.about {
+  text-align: center;
+  margin: 40px; }
+  .about h1 {
+    margin-bottom: 20px;
+    padding: .5em 0em;
+    color: black; }
+  .about p {
+    font-size: 1.2em;
+    line-height: 1.4; }
+
+.auctionBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.listing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 80%;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px; }
+  .listing img {
+    width: 200px;
+    height: 200px; }
+
+.item {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 7px; }
+
+.rightBox {
+  display: flex; }
+
+.bid {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 60px; }
+
+.btn {
+  width: 20%;
+  background-color: lightseagreen;
+  color: #fff; }
+
+#the_footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  #the_footer .authorInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em; }
+  #the_footer .other ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; }
+  #the_footer .other ul li {
+    padding: 1em 2em;
+    background-color: #3e4853; }
+  #the_footer .other p {
+    text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  #topHeader {
+    grid-template-columns: 1fr; }
+    #topHeader ul li {
+      padding: 0em 1em; }
+
+  #searchBar {
+    width: 90%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px; }
+    #searchBar input[type="text"] {
+      width: 70%; }
+    #searchBar .btn {
+      width: 20%; }
+
+  .auctionBlock {
+    grid-template-columns: 1fr;
+    margin-left: 60px; }
+
+  #the_footer {
+    grid-template-columns: 1fr; } }
+@media only screen and (min-width: 768px) {
+  #topHeader {
+    grid-template-columns: 1fr; }
+    #topHeader ul li {
+      padding: 0em 1em; }
+
+  #searchBar input[type="text"] {
+    width: 70%; }
+
+  #searchBar .btn {
+    width: 20%; }
+
+  .bid {
+    margin-left: 290px; }
+
+  .auctionBlock {
+    grid-template-columns: 1fr;
+    margin-left: 60px; }
+
+  #the_footer {
+    grid-template-columns: 1fr; } }
+@media only screen and (min-width: 992px) {
+  #topHeader {
+    grid-template-columns: repeat(2, 1fr); }
+    #topHeader ul li {
+      padding: 1em 1em; }
+
+  #searchBar input[type="text"] {
+    width: 88%; }
+
+  #searchBar .btn {
+    width: 10%; }
+
+  .bid {
+    margin-left: 100px; }
+
+  .auctionBlock {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px; }
+
+  #the_footer {
+    grid-template-columns: repeat(2, 1fr); } }
+@media only screen and (min-width: 1200px) {
+  .auctionBlock {
+    grid-template-columns: repeat(3, 1fr); } }
+
+/*# sourceMappingURL=main.css.map */
